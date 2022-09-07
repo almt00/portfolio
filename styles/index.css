@@ -37,7 +37,7 @@ span {
   font-weight: 600;
   gap: 1.5rem;
   padding: 10rem 1rem;
-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .nav_toggle {
@@ -47,19 +47,17 @@ transform: translateX(100%);
   z-index: 10;
 }
 
-
-
-/* ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-} */
+}
 
 li {
-  list-style-type:none;
+  list-style-type: none;
 }
 button {
   background-color: transparent;
@@ -68,7 +66,7 @@ button {
   padding: 0;
 }
 
-.info_button {
+.info_button_main {
   background-color: #a361ff;
   color: #f6efff;
   font-weight: 600;
@@ -78,6 +76,20 @@ button {
   padding: 15px 30px;
   margin: 0 10px;
   font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.info_button_second {
+  background-color: #faf9fa;
+  color: #a361ff;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid #a361ff;
+  align-items: center;
+  padding: 15px 30px;
+  margin: 0 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
 }
 
 i {
@@ -89,16 +101,20 @@ p {
   margin: 0;
   padding: 0;
 }
+
 /* specifics */
 
 .purple_text {
   color: #a361ff;
 }
 
-/* .center {
+.center {
   display: flex;
   align-items: center;
-} */
+}
+.header {
+  margin-bottom: 40px;
+}
 
 .title {
   font-family: "IBM Plex Sans";
@@ -110,7 +126,7 @@ p {
 }
 
 .subtitle {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-style: normal;
   font-weight: 400;
   color: #412766;
@@ -125,15 +141,27 @@ p {
   padding: 10px;
 }
 
-@media (min-width: 700px) {
-  /* nav {
-    padding: 2rem;
-    font-weight: 600;
-    vertical-align: middle;
+@media (min-width: 780px) {
+  .main_navbar {
+    visibility: visible;
+    display: flex;
     align-items: center;
-    margin: auto;
+    position: inherit;
+    margin: 0;
+    flex-direction: row;
+    text-decoration: none;
     background-color: transparent;
-  } */
+    color: #a361ff;
+    font-weight: 600;
+    gap: 1.5rem;
+    padding: 0;
+    transform: translateX(0%);
+    margin: 2rem;
+  }
+
+  .nav_toggle {
+    display: none;
+  }
 
   .title {
     font-family: "IBM Plex Sans";
@@ -145,7 +173,7 @@ p {
   }
 
   .subtitle {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-style: normal;
     font-weight: 400;
     color: #412766;
