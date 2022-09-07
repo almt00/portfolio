@@ -5,15 +5,6 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-/* nav {
-  padding: 2rem;
-  font-weight: 600;
-  vertical-align: middle;
-  align-items: center;
-  margin-left: 30%;
-  background-color: blue;
-} */
-
 .flex {
   display: flex;
 }
@@ -161,23 +152,4 @@ p {
     font-size: 1.5rem;
     text-align: center;
   }
-
-  .main_navbar {
-    visibility: hidden;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    margin: 0;
-    inset: 0 0 0 70%;
-    flex-direction: column;
-    text-decoration: none;
-    background-color: #f6efff;
-    color: #a361ff;
-    font-weight: 600;
-    gap: 1.5rem;
-    padding: 10rem 1rem;
-  transform: translateX(100%);
-  }
-
-  
 }
