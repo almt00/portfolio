@@ -216,6 +216,15 @@ b,
   gap: 1rem;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DAC0FF;
+  position: sticky;
+  padding: 5vh 10vw;
+}
+
 @media (max-width: 780px) {
   #aboutme_img {
     display: none;
